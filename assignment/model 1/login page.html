@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- stylesheet -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- js of bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+    <style>
+        body {
+            background-image: url(https://media.tenor.com/mGKQa3avS8AAAAAd/website-background.gif);
+        }
+
+        .navbar {
+            width: 100%;
+            height: auto;
+        }
+        .a_end a{
+            float: right;
+        }
+        .b_size{
+            width: 120px !important;
+        }
+
+
+        .mt-5 {
+            margin-top: 80px !important;
+        }
+
+        .hr-lines {
+            position: relative;
+            max-width: 500px;
+
+            text-align: center;
+        }
+
+        .hr-lines:before {
+            content: " ";
+            height: 2px;
+            width: 130px;
+            background: #1a111070;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+
+        .hr-lines:after {
+            content: " ";
+            height: 2px;
+            width: 130px;
+            background: #1a111070;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+
+
+
+        @media only screen and (min-width:320px) and (max-width:480px) {
+            .nav-link li {
+                display: block !important;
+                text-decoration: none;
+                padding: 2px 5px;
+                list-style-type: none;
+            }
+
+            
+
+            .hr-lines:before {
+                content: " ";
+                height: 2px;
+                width: 50px;
+                background: #1a111070;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+
+            .hr-lines:after {
+                content: " ";
+                height: 2px;
+                width: 50px;
+                background: #1a111070;
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+            }
+        }
+        @media only screen and (min-width:767px) and (max-width:1024px){
+            .hr-lines:before {
+                content: " ";
+                height: 2px;
+                width: 80px;
+                background: #1a111070;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+
+            .hr-lines:after {
+                content: " ";
+                height: 2px;
+                width: 80px;
+                background: #1a111070;
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+            }
+        }
+           
+        
+      
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <!-- https://media.tenor.com/p0G_bmA2vSYAAAAC/login.gif -->
+
+    <div class="container bg-light shadow-lg col-md-8 mt-5 p-5">
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <img src="https://assets-v2.lottiefiles.com/a/567e9d6a-116d-11ee-adcc-c362dfe23881/hrMdhw3flV.gif"
+                    class="img-fluid w-60">
+
+            </div>
+
+            <div class="col-md-6 shadow-lg">
+                <h1 class=" text-dark fs-1"> Login</h1>
+                <p class="card-text">
+                    <samll>Doesn't have account yet?</samll><b class="ms-2" data-bs-toggle="modal"
+                        data-bs-target="#log"><a href="#log">Sign Up</a></b>
+                </p>
+
+                <form>
+                    <div class="mb-2">
+                        <span class=""><i class="bi bi-envelope-at-fill"></i></span>
+                        <label for="email" class="form-label"><b>Email Address</b></label>
+                        <input type="text" name="email" id="email" placeholder="Email *" required class="form-control">
+                    </div>
+
+                    <div class="mb-2 a_end">
+                        <span><i class="bi bi-file-lock2-fill"></i></span>
+                        <label for="password" class="form-label "><b>Password</b></label>
+                        <b><a href="" class="d-inline-block ">Forget Password ?</a></b>
+                        <input type="password" id="password" name="pwd" placeholder="Password *" required
+                            class="form-control">
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">Remember Me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class=" mt-2  d-grid">
+
+                        <input type="submit" name="login" value="LOGIN" onClick="myFunction()"
+                            class="btn btn-sm btn-dark text-white text-center border border-success">
+
+                    </div>
+                    <p class="hr-lines mt-2"> Or login with </p>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3 text-center">
+                            <button type="button" class="btn btn-outline-danger b_size"><span><i class="bi bi-google"></i></span>
+                                Google</button>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3 text-center">
+                            <button type="button" class="btn btn-outline-primary b_size"><i class="bi bi-facebook"></i>
+                                Facebook</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- create account modal -->
+
+    <div class="modal fade" id="log" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container bg-light shadow-lg  mt-2 p-5">
+                    <h1 class="text-center text-dark fs-3">Sign Up</h1>
+                    <hr class="border border-1 border-white w-25 mx-auto">
+                    <form>
+                        <div class="mb-2">
+                            <span class=""><i class="bi bi-envelope-at-fill"></i></span>
+                            <label for="email" class="form-label"><b>Email Address</b></label>
+                            <input type="text" name="email" id="email" placeholder="Email *" required class="form-control">
+                        </div>
+    
+                        <div class="mb-2">
+                            <span><i class="bi bi-file-lock2-fill"></i></span>
+                            <label for="password" class="form-label"><b>Password</b></label>
+                            <input type="password" id="password" name="pwd" placeholder="Password *" required
+                                class="form-control">
+                        </div>
+
+
+                        <div class="mb-2">
+                            <span><i class="bi bi-file-lock2-fill"></i></span>
+                            <label for="password" class="form-label"><b>Confirm Password</b></label>
+                            <input type="password" id="password" name="pwd" placeholder="Password *" required
+                                class="form-control">
+                        </div>
+
+                        <div class="mt-2">
+
+                            <input type="submit" name="login" value="SignUp" class="btn btn-sm btn-dark text-white">
+                            <input type="reset" name="reset" value="Reset"
+                                class="btn btn-sm btn-danger ms-2 text-white">   
+
+                        </div>
+                        <div class=" mt-2">
+                            <b class="ms-2"> Already have an account ?<a href="" class="ms-2">Login here</a></b>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          window.location.href="/dashboard/index.html";
+        }
+      </script>
+</body>
+
+</html>
