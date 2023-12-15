@@ -2,7 +2,6 @@ $(function(){
     $("#quantity").change(function(){
           $("#subtotal").val(parseInt($("#quantity").val()) * parseInt($("#price").val()));
       });
-  });
   
 
   $(function(){
