@@ -1,0 +1,22 @@
+*use of output method in javascript.
+
+
+=> JavaScript output methods are used to display information on browser for users or debugging purposes. 
+
+=> use of output method
+
+1. console.log();
+   console.log('Hello, world!');
+
+2. document.write()   
+   document.write('Hello, world!')
+
+3. innerHTML
+   *html*
+           <div id="output"></div>
+
+    *javascript*
+        document.getElementById('output').innerHTML = 'New content';   
+
+4. window.alert()
+    window.alert('This is an alert!');

@@ -1,0 +1,15 @@
+*what is output method?
+
+Output method is interact with browser.
+you can check your javascript code is running or not through output method.
+through output method you can find your codinng erroe and slove it.
+
+here we take example:
+
+=> console.log()
+=> alert()
+=> prompt()
+=> document.write()
+=> window.print()
+=> window.prompt()
+=> window.alert()

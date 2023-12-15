@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculate subtotal price of quantity</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src='main.js'></script>
+
+    <!-- <button onclick="calculatesubtotal()" >+ add</button> -->
+  
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Product Name</th>
+            <th>quantity</th>
+            <th>Price Per Item</th>
+            <th>Sub Total</th>
+        </tr>
+        <tr>
+            <td class="td-value">1.</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQp6A-5hF_oB_bT8GfRavs3hVAJ_NPChNMGg&usqp=CAU" alt="chair"><br>Royaloak Chair</td>
+            <td><input id="quantity" type="number" value="0" min="0" max="10" class="td-value"></td>
+            <td><input id="price" type="text" value="6500" class="td-value" readonly></td>
+            <td><input id="subtotal" type="text" value="0" class="td-value" readonly></td>
+           
+        </tr>
+        <tr>
+            <td class="td-value">2.</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhT-KnkP3hKYpxcP67awX0elu4CTDz6nL5w&usqp=CAU" alt="chair"><br>Royaloak Chair</td>
+            <td><input id="quantity_1" type="number" value="0" min="0" max="10" class="td-value"></td>
+            <td><input id="price_1" type="text" value="4500" class="td-value" readonly></td>
+            <td><input id="subtotal_1" type="text" value="0" class="td-value" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: right;">Grand Total</td>
+            <td style="text-align: right;"><input id="grandtotal" type="text" value="0" readonly></td>
+        </tr>
+    </table>
+
+
+    
+</body>
+</html>
