@@ -1,0 +1,38 @@
+1) Explain Life cycle in Class Component and functional component with Hooks ?
+  Ans:-
+
+*Class Component Lifecycle*
+-> Mounting :- 
+             constructor(): Initializes state and binds event handlers.
+             static getDerivedStateFromProps(): Updates state based on props.
+             render(): Returns the JSX to be rendered.
+             componentDidMount(): Invoked immediately after a component is mounted. Ideal for making API calls or setting up subscriptions.
+ 
+ -> Updating :- 
+            static getDerivedStateFromProps(): Updates state based on props.
+            shouldComponentUpdate(): Determines if a re-render is necessary.
+            render(): Returns the JSX to be rendered.
+            getSnapshotBeforeUpdate(): Captures some information from the DOM before it is potentially changed.
+            componentDidUpdate(): Invoked immediately after updating occurs. Good for performing DOM operations or network requests based on the previous state.
+
+-> Unmounting :-             
+            componentWillUnmount(): Cleanup tasks such as invalidating timers, canceling network requests, or cleaning up subscriptions.
+
+-> Error Handling :- 
+            componentDidCatch(): Called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component.
+
+
+*Functional Component with Hooks*
+-> Mounting and Updating :- 
+            useState(): Allows state management.
+            useEffect(): Combines componentDidMount, componentDidUpdate, and componentWillUnmount in class components. Runs after the component renders.
+            useContext(): Subscribes to React context.
+
+-> Unmounting :- 
+            useEffect() with a cleanup function: Acts like componentWillUnmount to clean up effects.
+
+-> Other Hooks :-           
+            useReducer(): An alternative to useState for complex state logic.
+            useRef(): Accesses the DOM element directly.
+            useMemo(): Memoizes expensive calculations.
+            useCallback(): Memoizes functions to prevent unnecessary re-renders.
